@@ -114,8 +114,9 @@ class ChatListItem extends StatelessWidget {
                           ),
                         ),
                       ),
-                      if (chat.unreadCount > 0) ..[
+                      if (chat.unreadCount > 0)
                         const SizedBox(width: 8),
+                      if (chat.unreadCount > 0)
                         Container(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 8,
@@ -134,7 +135,6 @@ class ChatListItem extends StatelessWidget {
                             ),
                           ),
                         ),
-                      ],
                     ],
                   ),
                 ],

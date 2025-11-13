@@ -19,7 +19,7 @@ class MessageBubble extends StatelessWidget {
             isMe ? MainAxisAlignment.end : MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          if (!isMe) ..[
+          if (!isMe)
             CircleAvatar(
               radius: 16,
               backgroundColor: colorScheme.primaryContainer,
@@ -32,8 +32,8 @@ class MessageBubble extends StatelessWidget {
                 ),
               ),
             ),
+          if (!isMe)
             const SizedBox(width: 8),
-          ],
           Flexible(
             child: Container(
               padding: const EdgeInsets.symmetric(
